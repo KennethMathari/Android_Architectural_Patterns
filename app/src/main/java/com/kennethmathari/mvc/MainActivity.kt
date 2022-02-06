@@ -9,7 +9,14 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.userButton.setOnClickListener { login() }
+    }
+
+    private fun login() {
+        TODO("Not yet implemented")
     }
 }
 
