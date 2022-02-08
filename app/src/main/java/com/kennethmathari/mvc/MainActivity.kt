@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity(), ILoginView {
         loginController=LoginController(this)
 
         binding.userButton.setOnClickListener { login() }
-        binding.userEmail.setOnKeyListener { view, keyCode, _ -> handleKeyEvent(view, keyCode) }
         binding.userPassword.setOnKeyListener { view, keyCode, _ -> handleKeyEvent(view, keyCode) }
     }
 
